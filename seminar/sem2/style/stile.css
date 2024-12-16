@@ -1,0 +1,122 @@
+/* Общие стили */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Заголовки */
+.main-heading {
+    color: #14d324;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.paragraph-text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+.section-heading{
+    color: coral;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #c42323;
+    margin-bottom: 20px;
+    position: static;
+    text-align: center;
+    border-bottom: #e71240;
+    text-decoration: underline;
+    /* background-color: aqua;
+    background-position: 100cm; */
+}
+
+h2 {
+    font-size: 2em;
+    color: #2f23d8;
+    margin-bottom: 15px;
+}
+
+/* Параграфы */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Ссылки */
+.menu-link {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+a {
+    color: #1f13d1;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопки */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для контейнеров */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Стили для карточек */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для изображений */
+img {
+    width:10%; 
+    height:30%;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
