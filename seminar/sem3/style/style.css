@@ -1,0 +1,41 @@
+/* Обнуление основных элементов */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Убираем маркеры у списков */
+}
+
+/* Устанавливаем box-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+   margin-right: 50px;
+   padding: 50;
+   color: black;
+}
+
+.link_home {
+    margin-left: 100px;
+    color: brown;
+}
+
+.heading_top {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-block-end: 1%;
+    
+}
+.paragraf_top {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-block-end: 20px; 
+}
+.button {
+    margin: 50px;
+}
+.label {
+    margin: 20px;
+}
