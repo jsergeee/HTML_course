@@ -1,0 +1,36 @@
+/* Обнуление основных элементов */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Убираем маркеры у списков */
+}
+
+/* Устанавливаем box-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.item {
+border: 1px solid black;
+height: 200px;
+display: flex; /* Добавлено для использования Flexbox */
+align-items: center; /* Центрируем по вертикали */
+justify-content: center; /* Центрируем по горизонтали */
+}
+
+.content {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 100px 200px 200px;
+    gap: 32px;
+}
+
+.pic {
+width: auto;
+border: 2px solid red;
+justify-content: space-between;
+}
+

@@ -1,0 +1,121 @@
+/* Обнуление основных элементов */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Убираем маркеры у списков */
+}
+
+/* Устанавливаем box-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+   /* margin-right: 50px; */
+   /* padding: 50; */
+   color: black;
+}
+
+.link_home {
+    /* margin-left: 100px; */
+    color: brown;
+}
+
+.heading_top {
+display: flex;
+width: 522px;
+height: 222px;
+justify-content: flex-start;
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 60px;
+
+}
+.paragraf {
+display: flex;
+margin: 0px 200px;
+width: 466px;
+height: 48px;
+align-content: space-between;
+justify-content: start;
+}
+
+.paragraf_top {
+display: flex;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+}
+
+.button {
+    margin: 20px 20px;
+}
+
+.button_div {
+display: flex;
+grid-template-columns: 50px 50px;
+gap: 60px;
+}
+
+
+.label {
+    margin: 0px;
+}
+
+.top {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 500px 50px 70px 50px 50px 50px 50px 50px;
+    gap: 60px;
+    margin: 10px 0px;
+}
+
+.lebel_div{
+    width: 800px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    gap: 100px;
+    margin: 50px 0px;
+}
+.menu {
+/* border: 1px solid black; */
+height: 20px;
+display: flex; /* Добавлено для использования Flexbox */
+align-items: center; /* Центрируем по вертикали */
+justify-content: flex-start; /* Центрируем по горизонтали */
+flex-wrap: nowrap;
+}
+
+
+.menu1 {
+    /* border: 2px solid rgb(216, 15, 15); */
+}
+
+.home {
+    width: auto;
+    height: auto;
+    display: grid;
+    border: 1px solid rgba(75, 11, 179, 0.678);
+    grid-template-columns: 500px 200px;
+    /* gap: 60px; */
+}
+
+.meta1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home1 {
+    display: flex;
+    margin: 100px 20px;
+
+}
+.img1 {
+
+}
+.center {
+padding-left: calc(50% - 580px);
+padding-right: calc(50% - 580px);
+
+}
