@@ -28,7 +28,7 @@ width: 522px;
 height: 222px;
 justify-content: flex-start;
 align-items: center;
-font-family: 'Times New Roman', Times, serif;
+/* font-family: 'Times New Roman', Times, serif; */
 font-size: 60px;
 
 }
@@ -43,16 +43,23 @@ justify-content: start;
 
 .paragraf_top {
 display: flex;
-font-family: 'Times New Roman', Times, serif;
+/* font-family: 'Times New Roman', Times, serif; */
 font-size: 20px;
 }
 
 .button {
-    margin: 20px 20px;
+    height: auto;
+    width: autox;
+}
+
+.home_button {
+    display: grid;
+    justify-content: center;
+    grid-template-columns:;
 }
 
 .button_div {
-display: flex;
+display: grid;
 grid-template-columns: 50px 50px;
 gap: 60px;
 }
@@ -68,6 +75,17 @@ gap: 60px;
     grid-template-columns: 500px 50px 70px 50px 50px 50px 50px 50px;
     gap: 60px;
     margin: 10px 0px;
+}
+
+.lebel_div_1{
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    gap: 100px;
+    margin: 0px 0px;
+    justify-content: left;
+    
+    
 }
 
 .lebel_div{
@@ -86,26 +104,69 @@ justify-content: flex-start; /* Центрируем по горизонтали
 flex-wrap: nowrap;
 }
 
+.home_button1 {
+    position: absolute; /* Позиционируем кнопки абсолютно */
+    top: 0; /* Прикрепляем к верхней части родителя */
+    bottom: 0; /* Прикрепляем к нижней части родителя */
+    /* background-color: #007BFF; Цвет фона кнопок */
+    left: 0; /* Прикрепляем к левой стороне родителя */
+    width: 50%; /* Задаем ширину первой кнопки */
+}
+.home_button2 {
+    position: absolute; /* Позиционируем кнопки абсолютно */
+    top: 0; /* Прикрепляем к верхней части родителя */
+    bottom: 0; /* Прикрепляем к нижней части родителя */
+    /* background-color: #007BFF; Цвет фона кнопок */
+    right: 0; /* Прикрепляем к правой стороне родителя */
+    width: 50%; /* Задаем ширину второй кнопки */
+}
+
+.home_meta5{
+    position: relative; /* Устанавливаем контекст для абсолютного позиционирования */
+    height: 100px; /* Задайте нужную высоту для родителя */
+}
+
+.home_meta6 {
+    position: relative; /* Устанавливаем контекст для абсолютного позиционирования */
+    height: 100px; /* Задайте нужную высоту для родителя */
+    width: 0px;
+}
+
+.home_meta3 {
+    margin: 20px 0px;
+}
+
+
 
 .menu1 {
     /* border: 2px solid rgb(216, 15, 15); */
 }
 
+
 .home {
     width: auto;
     height: auto;
     display: grid;
-    border: 1px solid rgba(75, 11, 179, 0.678);
-    grid-template-columns: 500px 200px;
+    /* border: 1px solid rgba(75, 11, 179, 0.678); */
+    grid-template-columns: 500px 500px;
     /* gap: 60px; */
+    margin: 0px 0px;
 }
 
 .meta1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
+    height: 200px;
 }
 
+.home_meta2 {
+    grid-row: span 4;
+}
+
+.meta4 {
+
+}
 .home1 {
     display: flex;
     margin: 100px 20px;
@@ -119,3 +180,5 @@ padding-left: calc(50% - 580px);
 padding-right: calc(50% - 580px);
 
 }
+
+
