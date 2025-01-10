@@ -29,8 +29,8 @@ header {
 }
 
 
-/* main {
-    border: 2px solid rgb(9, 243, 98); */
+main {
+    /* border: 2px solid rgb(9, 243, 98); */
     min-width: 50vw;
 
 
@@ -47,6 +47,8 @@ header {
 }
 .headtext {
     /* border: 2px solid rgb(243, 9, 146); */
+    min-width: 90%;
+    max-width: 90%;
     justify-content: center;
     text-align: center;
     height: min-content;
@@ -67,8 +69,8 @@ header {
     /* border: 2px solid rgb(219, 13, 13); */
     width: 310px;
     height: 291px;
-    min-width: 20%;
-    max-width: 100%;
+    /* min-width: 20%;
+    max-width: 100%; */
 }
 
 .box1 {
@@ -76,8 +78,8 @@ header {
     /* border: 2px solid rgb(219, 13, 13); */
     width: 370px;
     height: 549px;
-    min-width: 20%;
-    max-width: 100%;
+    /* min-width: 20%;
+    max-width: 100%; */
 }
 
 
@@ -111,6 +113,8 @@ header {
 
 .item2 {
     /* border: 1px solid black; */
+    min-width: 80%;
+    max-width: 80%;
     height: 20%;
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +159,6 @@ header {
 .servises {
     /* border: 1px solid rgb(238, 8, 8); */
     display: flex;
-    /* grid-template-columns: repeat(3, 2fr); */
     justify-content: center;
     align-content: space-between;
     gap: 50px;
