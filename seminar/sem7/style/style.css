@@ -1,0 +1,313 @@
+/* Обнуление основных элементов */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Убираем маркеры у списков */
+
+
+
+}
+
+
+
+.center {
+margin-left: calc(50% - 384px);
+margin-right: calc(50% - 384px);
+}
+
+/* Устанавливаем box-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    background: black;
+    /* border: 1px solid rgb(27, 13, 219); */
+    margin: 10px auto;
+
+    
+}
+
+.logo {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    justify-items: center;
+    width: 111px;
+    height: 38px;
+    left: 30%;
+
+}
+
+.button_heder {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    position: relative;
+    width: 159px;
+    height: 29px;
+    left: 30%;
+    align-items: center;
+    justify-items: center;
+    margin: 5px auto;
+}
+
+.features {
+    /* border: 1px solid rgb(27, 13, 219); */
+    display: flex;
+    /* grid-template-columns: repeat(3, 2fr); */
+    justify-content: center;
+    align-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+
+main {
+    display: grid;
+    justify-content: space-between;
+
+}
+
+.hero {
+    display: flex;
+    /* border: 2px solid rgb(9, 243, 98); */
+    justify-content: center;
+    background: #F1E4E6;
+    margin: auto;
+    width: 769pxw;
+    height: 368px;
+    
+
+}
+
+.img_hero {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 5px;
+}
+
+.item_sep {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 10%;
+
+}
+
+.text_hero {
+    position: relative;
+    width:511px;
+    height: 92px;
+    z-index: 5;
+    right: 0%;
+    top: 138px;
+    background-color: #F1E4E6;
+    border-right: 10px;
+
+
+
+}
+.item_text_hero {
+    position: relative;
+    max-width: 10x;
+    gap: 1px;
+    flex-wrap: nowrap;
+
+}
+
+.separator {
+    position: relative;
+    width:10px;
+    height: 92px;
+    display: inline-block; /* Для корректного отображения */
+    background-color: #F16D7F;
+
+}
+
+.offer {
+    display: flex;
+    margin: 100px auto 20px;
+    width: 768px;
+    height: 303;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.offer_block {
+    position: relative;
+    width: 768px;
+    height: 303;
+}
+
+.image_offer {
+    position: relative;
+    filter: brightness(0.7);
+    z-index: 01;
+}
+
+.offer_text {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    z-index: 5;
+    bottom: 50%;
+    left: 10px;
+}
+
+.offer2 {
+    position: relative;
+    width: 76100vw;
+    height: 303;
+    z-index: 1;
+
+}
+
+.offer_text2 {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    top: -123px;
+    left: 180px;
+    z-index: 6;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    height: 1395px;
+    width: 1199px;
+    margin: auto;
+    justify-content: center
+}
+
+
+
+.item {
+    /* border: 1px solid black; */
+   
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-rows: repeat(4, 2fr);
+    justify-content: flex-start;
+    margin: auto;
+    align-content: flex-start;
+    text-align: left;
+    align-items: center;
+    height: 581px;
+    width: 378px;
+
+}
+
+.button {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    border: 2px solid #F16D7F;
+    align-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto 50px;
+    height: 48px;
+    width: 222px;
+    
+}
+
+
+.prioperty {
+    margin: auto 5px;
+}
+
+.prise {
+    margin: auto 5px;
+}
+
+.title {
+    margin: auto 5px;
+}
+
+
+
+
+.overlay {
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для затемнения */
+    /* Для осветления используйте: background-color: rgba(255, 255, 255, 0.5); */
+}
+
+
+.text_box {
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 100px auto;
+}
+
+
+
+
+.secation_title {
+    /* border: 2px solid rgb(230, 9, 9); */
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 80vw;
+    text-align: center;
+}
+
+
+.headtext {
+    /* border: 2px solid rgb(243, 9, 146); */
+    min-width: 90%;
+    max-width: 90%;
+    justify-content: center;
+    text-align: center;
+    height: min-content;
+}
+
+.text {
+    /* border: 2px solid rgb(41, 12, 206); */
+    min-width: 80vw;
+    max-width: 682px;
+    height: min-content;
+    display: grid;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.box {
+
+    /* border: 2px solid rgb(219, 13, 13); */
+    width: 310px;
+    height: 291px;
+    /* min-width: 20%;
+    max-width: 100%; */
+}
+
+.box1 {
+
+    /* border: 2px solid rgb(219, 13, 13); */
+    width: 370px;
+    height: 549px;
+    /* min-width: 20%;
+    max-width: 100%; */
+}
+
+
+
+
+
+
