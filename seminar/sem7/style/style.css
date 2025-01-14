@@ -91,6 +91,7 @@ main {
     justify-content: space-around;
     position: relative;
     left: 5px;
+    
 }
 
 .item_sep {
@@ -150,6 +151,9 @@ main {
     position: relative;
     filter: brightness(0.7);
     z-index: 01;
+    width: 232px;
+    height: 176px;
+    gap: 5px;
 }
 
 .offer_text {
@@ -173,18 +177,17 @@ main {
     position: relative;
     text-align: center;
     font-size: 24px;
-    top: -123px;
-    left: 180px;
+    top: -145px;
+    left: 0px;
     z-index: 6;
 }
 
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    height: 1395px;
-    width: 1199px;
+    grid-template-columns: repeat(2, 2fr);
     margin: auto;
-    justify-content: center
+    justify-content: center;
+    gap: 5px;
 }
 
 
@@ -206,8 +209,8 @@ main {
 }
 
 .button {
-    position: absolute;
-    left: 50%;
+    position: relative;
+    left: 0%;
     display: flex;
     border: 2px solid #F16D7F;
     align-content: flex-start;
