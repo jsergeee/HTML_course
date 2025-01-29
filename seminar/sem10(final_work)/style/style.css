@@ -1,0 +1,198 @@
+/* Обнуление основных элементов */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Убираем маркеры у списков */
+
+
+
+}
+
+
+
+.center2 {
+    margin-left: calc(50% - 250px);
+    margin-right: calc(50% - 250px);
+}
+
+.center {
+    margin-left: calc(50% - 384px);
+    margin-right: calc(50% - 384px);
+}
+
+
+/* Устанавливаем box-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+/*--------------------------*/
+
+.menu {
+    height: 75px;
+    background-color: black;
+    width: 100vw;
+}
+
+.container-fluid {
+    justify-content: flex-end !important;
+}
+
+
+
+
+.hero {
+    display: flex;
+    height: 764px;
+    background-color: #F1E4E6;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100vw;
+
+}
+
+.text_hero {
+    border-left: 12px solid #F16D7F;
+}
+
+.offer {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    align-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.offer_item1 {
+    display: flex;
+    display: flex;
+    /* Добавлено для Flexbox */
+    flex-direction: column;
+    /* Установите направление по вертикали */
+    align-items: center;
+    /* Центрируем по горизонтали */
+    justify-content: center;
+    /* Центрируем по вертикали */
+
+}
+
+.offer_item2 {
+    display: flex;
+    display: flex;
+    /* Добавлено для Flexbox */
+    flex-direction: column;
+    /* Установите направление по вертикали */
+    align-items: center;
+    /* Центрируем по горизонтали */
+    justify-content: center;
+    /* Центрируем по вертикали */
+
+}
+
+.offer_item3 {
+    display: flex;
+    /* Добавлено для Flexbox */
+    flex-direction: column;
+    /* Установите направление по вертикали */
+    align-items: center;
+    /* Центрируем по горизонтали */
+    justify-content: center;
+    /* Центрируем по вертикали */
+
+}
+
+.offer_text {
+
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.offer_2 {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    flex-direction: column;
+    /* Установите направление по вертикали */
+    align-items: center;
+    /* Центрируем по горизонтали */
+    justify-content: center;
+    /* Центрируем по вертикали */
+    height: 180px;
+
+
+}
+
+.img_mob_div {
+    position: absolute;
+}
+
+.image_mobile {}
+
+.image_offer {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.image5 {}
+
+.offer_text2 {}
+
+
+@media (max-width: 1200px) {
+    .text_hero {}
+
+    .img_hero {
+        display: none;
+    }
+
+    .offer {
+        flex-wrap: wrap;
+    }
+
+    .offer_2 {
+        height: 111px;
+    }
+
+    .offer_text2 {
+        left: 0%;
+    }
+
+    .hero {
+        height: 35vh;
+    }
+
+    .menu {
+        height: 50px;
+    }
+
+
+    .image5 {
+        display: none;
+    }
+
+}

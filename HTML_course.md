@@ -22,6 +22,12 @@
 
 Эти блоки могут комбинироваться и адаптироваться в зависимости от специфики сайта и потребностей его аудитории.
 
+___
+
+
+
+---
+
 ## Фиргуры	
 
 В HTML для создания фигур можно использовать различные подходы, включая CSS для стилизации элементов. Вот несколько примеров, как создать простые фигуры с помощью HTML и CSS:
@@ -142,6 +148,147 @@
 
 
 Эти примеры демонстрируют, как с помощью HTML и CSS можно создать базовые фигуры. Вы можете изменять размеры, цвета и другие свойства, чтобы адаптировать фигуры под ваши нужды.
+
+---
+
+Существует несколько способов создания графических элементов в HTML, помимо использования CSS для стилизации элементов, как в приведенном вами примере. Вот некоторые из них:
+
+### 1. SVG (Scalable Vector Graphics)
+SVG — это формат векторной графики, который позволяет создавать графику с помощью XML. SVG идеально подходит для создания масштабируемых изображений, таких как иконки и иллюстрации.
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Квадрат</title>
+</head>
+<body>
+    <svg width="100" height="100">
+        <rect width="100" height="100" style="fill:blue;" />
+    </svg>
+</body>
+</html>
+```
+
+### 2. Canvas
+Canvas позволяет рисовать графику с помощью JavaScript. Это подходит для динамической графики, такой как игры или анимации.
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Квадрат</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="100" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(0, 0, 100, 100);
+    </script>
+</body>
+</html>
+```
+
+### 3. CSS Shapes
+CSS также позволяет создавать различные формы с помощью свойств, таких как `border-radius`, `clip-path` и т.д.
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Круг</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%; /* Создает круг */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
+```
+
+### 4. Использование изображений
+Вы можете использовать изображения в формате PNG, JPEG, GIF и других, чтобы создавать графические элементы. Это можно сделать с помощью элемента `<img>` или как фон с помощью CSS.
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изображение</title>
+</head>
+<body>
+    <img src="path/to/image.png" alt="Пример изображения" width="100" height="100">
+</body>
+</html>
+```
+
+### 5. CSS Gradients
+CSS позволяет создавать градиенты, которые также могут служить фоном или цветом для элементов.
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Градиент</title>
+    <style>
+        .gradient {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right, red, blue); /* Градиент от красного к синему */
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient"></div>
+</body>
+</html>
+```
+
+### 6. WebGL
+WebGL — это JavaScript API для рендеринга 2D и 3D графики в браузере. Он более сложен в использовании, но позволяет создавать интерактивную 3D графику.
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Пример</title>
+</head>
+<body>
+    <canvas id="glCanvas" width="640" height="480"></canvas>
+    <script>
+        var canvas = document.getElementById('glCanvas');
+        var gl = canvas.getContext('webgl');
+        if (!gl) {
+            console.log('WebGL не поддерживается');
+        }
+        // Здесь можно добавить код для отрисовки графики с помощью WebGL
+    </script>
+</body>
+</html>```
+```
+
+
+
+
 
 
 
@@ -327,3 +474,256 @@ max-width:
 
 Синтаксис Все запросы начинаются с правила @media, после чего следует условие, в котором используются типы носителей, логические операторы и медиафункции.
 
+
+
+
+
+### Урок 6. Структура HTML5
+
+На этом уроке
+
+1. Новые семантические элементы
+2. Модерация стандартной html формы
+3. Добавление аудио и видео на страницу
+
+---
+
+Вот более полный и исчерпывающий перечень семантических и структурных элементов HTML5, которые помогают организовать контент на веб-страницах:
+
+▎Семантические элементы
+
+1. article - независимый блок контента.
+
+2. section - секция, содержащая тематически связанный контент.
+
+3. nav - навигационное меню.
+
+4. header - заголовок секции или страницы.
+
+5. footer - нижняя часть секции или страницы.
+
+6. aside - контент, связанный с основным, но не являющийся его частью. Можно убрать без потери смысла страницы.
+
+7. h1, h2, h3, h4, h5, h6 - заголовки различных уровней.
+
+8. figure - иллюстрация или графика с возможной подписью.
+
+9. figcaption - подпись к элементу figure.
+
+10. main - основной контент документа.
+
+11. time - дата или время.
+
+12. mark - выделенный текст.
+
+13. progress - прогресс выполнения задачи.
+
+14. meter - измерение в пределах диапазона.
+
+15. details - скрытый контент, который можно раскрыть.
+
+16. summary - заголовок для элемента details.
+
+17. dialog - диалоговое окно.
+
+18. address - контактная информация.
+
+19. template - шаблон для динамического контента.
+
+20. slot - используется в Web Components для определения мест вставки.
+
+▎Элементы для графики и мультимедиа
+
+21. canvas - для рисования графики с помощью JavaScript.
+
+22. svg - для векторной графики.
+
+23. audio - для встраивания аудиофайлов.
+
+24. video - для встраивания видеопотоков.
+
+25. track - для добавления текстовых дорожек к элементам video и audio.
+
+▎Формы и элементы управления
+
+26. form - форма для ввода данных.
+
+27. input - элемент для ввода данных.
+
+28. textarea - многострочное текстовое поле.
+
+29. button - кнопка для взаимодействия.
+
+30. select - выпадающий список.
+
+31. option - элемент выбора в списке.
+
+32. label - метка для элемента формы.
+
+33. fieldset - группа элементов формы.
+
+34. legend - заголовок для элемента fieldset.
+
+▎Интерактивные элементы
+
+35. iframe - встраивание другого HTML-документа.
+
+36. embed - встраивание внешнего контента (например, Flash).
+
+37. object - для встраивания мультимедийных объектов.
+
+38. param - параметры для элемента object.
+
+▎Дополнительные элементы
+
+39. script - для встраивания JavaScript.
+
+40. noscript - контент, отображаемый, если JavaScript отключен.
+
+41. link - связь с внешним ресурсом, например, CSS.
+
+42. meta - метаданные о документе.
+
+43. title - заголовок документа.
+
+Этот перечень охватывает большинство семантических и структурных элементов HTML5, которые могут быть использованы для создания веб-страниц. Однако стоит отметить, что HTML продолжает развиваться, и новые элементы могут быть добавлены в будущих версиях.
+
+---
+
+
+
+ # Урок 7. Новые возможности CSS3
+
+
+
+## На этом уроке:
+
+1. Псевдоклассы и псевдоэлементы
+
+2. Работа с svg
+
+3. Эффекты перехода
+
+4. Эффекты трансформации
+
+5. Эффекты анимации
+
+   ---
+
+   
+
+HTML эффекты наведения и трансформации можно реализовать с помощью CSS. Ниже приведены примеры простых эффектов наведения и трансформации, которые можно использовать в ваших проектах.
+
+▎Пример 1: Эффект наведения на кнопку
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эффект наведения</title>
+    <style>
+        .button {
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button">Наведи на меня</button>
+
+</body>
+</html>
+
+
+▎Пример 2: Эффект наведения на изображение
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эффект наведения на изображение</title>
+    <style>
+        .image-container {
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .image-container img {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+    
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="https://via.placeholder.com/300" alt="Пример изображения">
+    </div>
+
+</body>
+</html>
+
+
+▎Пример 3: Эффект наведения на карточку
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эффект наведения на карточку</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h3>Заголовок карточки</h3>
+        <p>Некоторый текст внутри карточки.</p>
+    </div>
+
+</body>
+</html>
+
+
+▎Объяснение:
+
+1. Эффект наведения на кнопку: При наведении на кнопку изменяется цвет фона и масштабируется кнопка.
+
+2. Эффект наведения на изображение: При наведении изображение увеличивается, создавая эффект "приближения".
+
+3. Эффект наведения на карточку: При наведении карточка поднимается и увеличивается тень, создавая эффект "подъема".
+
+Вы можете адаптировать эти примеры под свои нужды, изменяя цвета, размеры и другие свойства.

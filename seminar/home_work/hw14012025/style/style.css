@@ -1,0 +1,100 @@
+
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Убираем маркеры у списков */
+
+
+
+}
+
+
+/* Устанавливаем box-sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+
+.header {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    min-width: 90vw;
+    left: 15px;
+    right: 15px;
+
+
+}
+.item {
+    position: relative;
+    display: inline;
+    border: 1px solid black;
+    max-width: 20vw;
+    max-height: 50vh;
+    min-width: 20vw;
+    aspect-ratio: 1 / 1;
+    place-items: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    gap: 15px;
+    margin: 10px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.table {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    /* grid-auto-rows: 100px; */
+    justify-content: center;
+    justify-items: center;
+    /* gap: 15px; */
+    margin-top: 50px;
+    max-width: 90vw;
+    min-width: 90vw;
+    aspect-ratio: 1 / 1;
+    left: 15px;
+    right: 15px;
+    column-gap: 5px;
+
+}
+
+.item:hover {
+    transform: translate3d(0, -10px, 10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+    .item {
+        width: 30vw;
+        aspect-ratio: 1 / 1;
+        left: 50vw;
+        right: 50vw;
+        min-height: 10vh;
+        margin: 5px;
+    }
+}
+
+
+@media (max-width: 150px) {
+    .item {
+        aspect-ratio: 1 / 1;
+        left: 50vw;
+        right: 50vw;
+        min-height: 10vh;
+        min-width: 60vh;
+        margin: 5px;
+    }
+    
+}
